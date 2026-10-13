@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PROCEDURES>
+
+  <!--<PARAMETROS PARA SISTEMA ES-->
+  <PROCEDURE name="SP_INS_EDOS_CTA_BANCOS">
+    <PARAMETER name="ID_MOV" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="BANCO_ID" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="FECHA" type="DateTime" direction ="in"></PARAMETER>
+    <PARAMETER name="REFERENCIA" type="VarChar" direction ="in"></PARAMETER>
+    <PARAMETER name="MONTO" type="Money" direction ="in"></PARAMETER>
+    <PARAMETER name="TIPO_MOV" type="VarChar" direction ="in"></PARAMETER>
+    <PARAMETER name="ARCHIVO" type="VarChar" direction ="in"></PARAMETER>
+    <PARAMETER name="EC_Archivo" type="VarChar" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Num_Movto" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Cuenta" type="VarChar" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Fecha" type="DateTime" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Referencia" type="VarChar" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Importe" type="Money" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Tipo_Mov" type="VarChar" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Cargo" type="Money" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Abono" type="Money" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Saldo" type="Money" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Concepto_Desc1" type="VarChar" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Concepto_Desc2" type="VarChar" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Consec_Movim" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Cod_Transac" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Num_Sucursal" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Fec_Edo_Cta" type="DateTime" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Moneda" type="VarChar" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Dato1" type="VarChar" direction="in"></PARAMETER>
+    <PARAMETER name="EC_Dato2" type="VarChar" direction="in"></PARAMETER>
+  </PROCEDURE>
+  
+
+  <PROCEDURE name="USP_PRE_SOLICITUD">
+    <PARAMETER name="P_ACCION" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="P_NO_SOLICITUD" type="Int" direction ="in"></PARAMETER>
+    <PARAMETER name="P_STATUS" type="Int" direction ="in"></PARAMETER>
+  </PROCEDURE>
+
+  <PROCEDURE name="REP_ENC_ESTADO_CUENTA">
+    <PARAMETER name="CRD" type="Int" direction="in"></PARAMETER>    
+  </PROCEDURE>
+
+  <PROCEDURE name="SP_ACCION_ASEG_MS">
+    <PARAMETER name="FOLIO" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="ESTATUS" type="Int" direction="in"></PARAMETER>
+  </PROCEDURE>
+
+  <PROCEDURE name="SP_DEV_ASEG_MS">
+    <PARAMETER name="MS_ID" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="CANCELA" type="Int" direction="in"></PARAMETER>
+    <PARAMETER name="MONTO" type="Money" direction="in"></PARAMETER>
+  </PROCEDURE>
+
+  <!--</PARAMETROS PARA SISTEMA ES-->
+</PROCEDURES>
+
+<!--DIRECCIÓN DE PARAMETROS
+Input = "in"
+Output = "out"
+InputOutput = "io"
+-->
+
+<!--TIPOS DE PARAMETROS PARA SQL SERVER
+BigInt
+Binary
+Bit
+Char
+Date
+DateTime
+DateTime2
+DateTimeOffset
+Decimal
+Float
+Image
+Int
+Money
+NChar
+NVarChar
+Real
+SmallDateTime
+SmallInt
+SmallMoney
+Structured
+Text
+Time
+Timestamp
+TinyInt
+Udt
+UniqueIdentifier
+VarBinary
+VarChar
+Variant
+Xml
+-->
